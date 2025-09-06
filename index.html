@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Portfólio</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao">
+            <a href="index.html">Home</a>
+            <a href="about.html">Sobre</a>
+        </nav>
+    </header>
+    <main>
+        <img class="fundo" src="/assets/analise-de-dados-.png" alt="">
+        <h1>Eleve seu negócio digital a outro nivel</h1>
+        <p>Olá, me chamo Neto e atuo como Analista de dados e tenho muito interesse por <strong>Analytics</strong> e <strong>Data Science</strong></p>
+        <div class="links">
+            <div class="linkedin-link">
+                <img src="assets/linkedin.png" alt="icone linkedin" class="linkedin-icon">
+                <a class="um" href="https://www.linkedin.com/in/netogm/">Linkedn</a>
+            </div>
+            <div class="github-link">
+                <img src="assets/github.png" alt="icone github" class="github-icon">
+                <a class="dois" href="https://github.com/nevidev">Github</a>
+            </div>
+            
+        </div>
+        
+    </main>
+    <div class="image-container">
+        <img src="/assets/data-science.jpg" alt="imagem sobre data science">
+    </div>
+        
+    <footer class="rodape">Desenvolvimento próprio</footer>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+        // Só aplica em links internos
+        if (link.hostname === window.location.hostname) {
+            link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location = link.href;
+            }, 300); // tempo igual ao do transition
+            });
+        }
+        });
+    </script>
+</body>
+</html>
