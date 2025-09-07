@@ -129,12 +129,12 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-        max-width: none !important;
-        max-height: none !important;
-        width: 100vw !important; 
-        height: 100vh !important;
-        min-width: 100vw !important;
-        min-height: 100vh !important;
+    max-width: none !important;
+    max-height: none !important;
+    width: 100vw !important; 
+    height: 100vh !important;
+    min-width: 100vw !important;
+    min-height: 100vh !important;
     object-fit: cover;
     z-index: -1; /* fica atrás do conteúdo */
     filter: grayscale(100%) brightness(40%);
@@ -192,6 +192,7 @@ main {
     body {
         flex-direction: column; /* empilha os elementos verticalmente */
         padding: 20px; /* adiciona algum espaçamento nas laterais */
+
     }
 
     main {
@@ -209,7 +210,6 @@ main {
     img {
         width: 100%; /* imagem ocupa toda a largura do container */
         max-width: 400px; /* limita o tamanho máximo da imagem */
-        margin-top: 20px; /* adiciona espaçamento acima da imagem */
     }
 
     .fundo {
@@ -236,13 +236,13 @@ main {
     height: 25px;
     margin-left: 8px; /* espaço entre o texto e o ícone */
     vertical-align: middle; /* alinha o ícone com o texto */
-    margin-bottom: 22%;
+    margin-bottom: 1%;
     }
     .links .github-link .github-icon {
     width: 25px; /* ajuste o tamanho conforme necessário */
     height: 25px;
     margin-left: 8px; /* espaço entre o texto e o ícone */
     vertical-align: middle; /* alinha o ícone com o texto */
-    margin-bottom: 22%;
+    margin-bottom: 1%;
     }
 }
