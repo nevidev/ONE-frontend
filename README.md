@@ -6,9 +6,10 @@
 
 - Neste repositório, por exemplo, foi desenvolvido um portfólio pessoal com base nos ensinamentos dos cursos de frontend
 
-- Também realizei o deploy usando o Vencel, você pode conferir o site [aqui](https://one-frontend-eosin.vercel.app/)
+- Também realizei o deploy usando o Vencel, você pode conferir o site <a href="https://one-frontend-eosin.vercel.app/" target="_blank" >aqui</a>
 
 ---
 
 > “Educar para transformar. Inovar para impactar.” — Oracle Next Education + Biofy + Alura
+
 
