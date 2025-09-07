@@ -162,7 +162,6 @@ main {
     font-size: 1.25rem;
     color: rgb(131, 95, 172);
     font-style: italic;
-
     backdrop-filter: blur(8px);      /* efeito de desfoque */
     -webkit-backdrop-filter: blur(8px); /* suporte para Safari */
     z-index: 10;
