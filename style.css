@@ -94,7 +94,8 @@ a:visited {
 img {
     display: block;
     margin: 0 auto;
-    width: 550px; /* ajuste o valor conforme necessário */
+    width: 100%; /* ajuste o valor conforme necessário */
+    max-width: 550px;
     height: auto;
     border-radius: 10px; /* cantos arredondados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra sutil */
@@ -107,7 +108,7 @@ main {
     margin-top: 0; /* remove o espaçamento superior */
     width: 50%;
     max-width: 100%;
-    padding-top: 5%;
+    padding-top: 60px;
     padding-left: 5%;
 }
 
@@ -126,8 +127,14 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    right: 0;
+    bottom: 0;
+        max-width: none !important;
+        max-height: none !important;
+        width: 100vw !important; 
+        height: 100vh !important;
+        min-width: 100vw !important;
+        min-height: 100vh !important;
     object-fit: cover;
     z-index: -1; /* fica atrás do conteúdo */
     filter: grayscale(100%) brightness(40%);
@@ -137,7 +144,8 @@ main {
 .rodape {
     position: fixed;
     bottom: 0px;
-    width: 100%;
+    width: 100vw;
+    left: 0;
     text-align: center;
     font-size: 0.8rem;
     color: rgb(73, 73, 73);
@@ -154,7 +162,10 @@ main {
     font-size: 1.25rem;
     color: rgb(131, 95, 172);
     font-style: italic;
-    padding: 1% 0;
+
+    backdrop-filter: blur(8px);      /* efeito de desfoque */
+    -webkit-backdrop-filter: blur(8px); /* suporte para Safari */
+    z-index: 10;
 }
 
 .navegacao {
@@ -186,7 +197,8 @@ main {
     main {
         width: 100%; /* main ocupa toda a largura disponível */
         padding: 0; /* remove o padding */
-        margin-top: 10%; /* remove o espaçamento superior */
+        margin-top: 0; /* remove o espaçamento superior */
+        padding-top: 60px;
     }
 
     .image-container {
@@ -198,6 +210,22 @@ main {
         width: 100%; /* imagem ocupa toda a largura do container */
         max-width: 400px; /* limita o tamanho máximo da imagem */
         margin-top: 20px; /* adiciona espaçamento acima da imagem */
+    }
+
+    .fundo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: none !important;
+        max-height: none !important;
+        width: 100vw !important; 
+        height: 100vh !important;
+        min-width: 100vw !important;
+        min-height: 100vh !important;
+        object-fit: cover;
+        z-index: -1; /* fica atrás do conteúdo */
+        filter: grayscale(100%) brightness(40%);
+        opacity: 0.2; /* 80% apagada */
     }
 
     .links {
